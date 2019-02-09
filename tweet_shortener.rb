@@ -59,3 +59,41 @@ def bulk_tweet_shortener(tweets)
   end
 
 end
+
+def selective_tweet_shortener(tweet)
+
+    word_subs = {
+              "hello" => 'hi',
+              "to" => '2',
+              "two" => '2',
+              "too" => '2',
+              "for"=> '4',
+              "four" => '4',
+              'be' => 'b',
+              'you' => 'u',
+              "at" => "@" ,
+              "and" => "&",
+                  }
+
+    if tweet.length > 140              
+
+
+        x = tweet.split(" ")
+        string_array = []
+
+        x.each do |word|
+          if word_subs.keys.include? word.downcase
+            string_array.push(word_subs[word.downcase])
+          else
+            string_array.push(word)
+          end
+        end
+        return_string = string_array.join(" ")
+        puts return_string
+
+    else
+      tweet
+end
+  
+end
+

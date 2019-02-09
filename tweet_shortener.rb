@@ -2,7 +2,7 @@
 
 def word_substituter(strings)
 
-  
+
   word_subs = {
             "hello" => 'hi',
             "to, two, too" => '2',
@@ -15,7 +15,7 @@ def word_substituter(strings)
 
 
 
-  
+
   x = strings.split(" ")
   string_array = []
 

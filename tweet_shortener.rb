@@ -1,17 +1,18 @@
-word_subs = {
-          "hello" => 'hi',
-          "to" => '2',
-          "two" => '2',
-          "too" => '2',
-          "for, four" => '4',
-          'be' => 'b',
-          'you' => 'u',
-          "at" => "@" ,
-          "and" => "&",
-              }
+
 
 def word_substituter(strings)
-
+  
+  word_subs = {
+            "hello" => 'hi',
+            "to" => '2',
+            "two" => '2',
+            "too" => '2',
+            "for, four" => '4',
+            'be' => 'b',
+            'you' => 'u',
+            "at" => "@" ,
+            "and" => "&",
+                }
   x = strings.split(" ")
   string_array = []
 

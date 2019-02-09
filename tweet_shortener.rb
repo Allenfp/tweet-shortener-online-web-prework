@@ -89,7 +89,7 @@ def selective_tweet_shortener(tweet)
           end
         end
         return_string = string_array.join(" ")
-        puts return_string
+        return return_string
 
     else
       tweet

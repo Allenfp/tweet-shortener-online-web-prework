@@ -48,7 +48,7 @@ def bulk_tweet_shortener(tweets)
     string_array = []
 
     x.each do |word|
-      if word_subs.keys.include? word
+      if word_subs.keys.include? word.downcase
         string_array.push(word_subs[word])
       else
         string_array.push(word)

@@ -1,19 +1,16 @@
-
+word_subs = {
+          "hello" => 'hi',
+          "to" => '2',
+          "two" => '2',
+          "too" => '2',
+          "for, four" => '4',
+          'be' => 'b',
+          'you' => 'u',
+          "at" => "@" ,
+          "and" => "&",
+              }
 
 def word_substituter(strings)
-
-  word_subs = {
-            "hello" => 'hi',
-            "to" => '2',
-            "two" => '2',
-            "too" => '2',
-            "for, four" => '4',
-            'be' => 'b',
-            'you' => 'u',
-            "at" => "@" ,
-            "and" => "&",
-                }
-
 
   x = strings.split(" ")
   string_array = []
@@ -26,4 +23,8 @@ def word_substituter(strings)
     end
   end
   string_array.join(" ")
+end
+
+def bulk_tweet_shortener(tweets)
+
 end

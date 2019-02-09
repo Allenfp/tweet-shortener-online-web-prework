@@ -18,7 +18,7 @@ def word_substituter(strings)
       string_array.push(word_subs[word])
     else
       string_array.push(word)
-
+    end
   end
-string_array.join(" ")
+  string_array.join(" ")
 end

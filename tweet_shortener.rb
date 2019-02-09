@@ -20,5 +20,5 @@ def word_substituter(strings)
       string_array.push(word)
 
   end
-
+string_array.join(" ")
 end

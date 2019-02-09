@@ -126,7 +126,7 @@ def shortened_tweet_truncator(tweet)
             end
           end
           return_string = string_array.join(" ")
-          return return_string.truncate(0...140)
+          return return_string.truncate[0...140]
 
       else
         tweet

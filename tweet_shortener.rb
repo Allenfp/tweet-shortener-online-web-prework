@@ -75,7 +75,7 @@ def selective_tweet_shortener(tweet)
               "and" => "&",
                   }
 
-    if tweet.length > 130
+    if tweet.length > 131
 
 
         x = tweet.split(" ")
